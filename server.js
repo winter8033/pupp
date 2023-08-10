@@ -106,6 +106,11 @@ async function createNewAccount(page) {
     // 10. 打印第一个钱包地址
     const addresses = _getAccountAddressesFromMnemonic(phaseText);
     console.log(addresses[0].address);
+
+    const localStorage1 = await page.evaluate(() => Object.assign({}, window.localStorage));
+    console.log("-----storage-----")
+    console.log(localStorage1);
+    console.log("-----------------")
 }
 
 function getPhases() {
