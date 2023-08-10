@@ -1,0 +1,20 @@
+{
+   "appDescription": {
+      "description": "Mô tả ứng dụng",
+      "message": "Ví tiền điện tử tốt nhất hỗ trợ Bitcoin, Ethereum, BNB, Swap và thị trường NFT,"
+   },
+   "appName": {
+      "description": "Tên ứng dụng",
+      "message": "BitKeep: Ví tiền điện tử Bitcoin"
+   },
+   "demo": {
+      "description": "Tên tiện ích",
+      "message": "BitKeep $URL$",
+      "placeholders": {
+         "url": {
+            "content": "$1",
+            "example": "https://developer.mozilla.org"
+         }
+      }
+   }
+}

@@ -1,0 +1,71 @@
+要解决在Docker中使用Puppeteer时出现"Missing X server or $DISPLAY"错误，可以按照以下步骤编写正确的Dockerfile：
+
+1. 使用一个基础的Node.js镜像作为基础镜像，例如官方的Node.js镜像：
+
+FROM node:14
+
+2. 安装所需的依赖，包括Puppeteer和Chromium：
+
+RUN apt-get update && apt-get install -y \
+    gconf-service \
+    libasound2 \
+    libatk1.0-0 \
+    libc6 \
+    libcairo2 \
+    libcups2 \
+    libdbus-1-3 \
+    libexpat1 \
+    libfontconfig1 \
+    libgcc1 \
+    libgconf-2-4 \
+    libgdk-pixbuf2.0-0 \
+    libglib2.0-0 \
+    libgtk-3-0 \
+    libnspr4 \
+    libpango-1.0-0 \
+    libpangocairo-1.0-0 \
+    libstdc++6 \
+    libx11-6 \
+    libx11-xcb1 \
+    libxcb1 \
+    libxcomposite1 \
+    libxcursor1 \
+    libxdamage1 \
+    libxext6 \
+    libxfixes3 \
+    libxi6 \
+    libxrandr2 \
+    libxrender1 \
+    libxss1 \
+    libxtst6 \
+    ca-certificates \
+    fonts-liberation \
+    libappindicator1 \
+    libnss3 \
+    lsb-release \
+    xdg-utils \
+    wget
+
+RUN npm install puppeteer
+ 
+
+3. 设置环境变量`PUPPETEER_SKIP_CHROMIUM_DOWNLOAD`为`true`，以避免下载Chromium：
+
+ 
+ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD true
+ 
+
+4. 使用`CMD`指令来运行你的应用程序，例如：
+
+ 
+CMD ["node", "app.js"]
+5. 将Dockerfile保存为`Dockerfile`文件，并在同一目录下执行以下命令来构建Docker镜像：
+docker build -t my-app .
+ 
+6. 运行Docker容器： 
+docker run -it my-app
+这样，你的Docker容器就可以在headless模式下正常运行Puppeteer，而不会出现"Missing X server or $DISPLAY"错误。 
+
+这种方式的puppeteer运行时报错Could not find expected browser (chrome) locally，怎么配置executablePath才对
+
+

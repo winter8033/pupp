@@ -1,0 +1,20 @@
+{
+   "appDescription": {
+      "description": "Descripción de la aplicación",
+      "message": "Mejor billetera digital criptográfica que admite Bitcoin, Ethereum, BNB, Swap y NFT Market"
+   },
+   "appName": {
+      "description": "Nombre de la aplicación",
+      "message": "BitKeep: Bitcoin Crypto Wallet"
+   },
+   "demo": {
+      "description": "Nombre de extensión",
+      "message": "Bitkeep $URL$",
+      "placeholders": {
+         "url": {
+            "content": "$1",
+            "example": "https://developer.mozilla.org"
+         }
+      }
+   }
+}

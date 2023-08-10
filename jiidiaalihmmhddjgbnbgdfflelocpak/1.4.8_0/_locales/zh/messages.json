@@ -1,0 +1,20 @@
+{
+   "appDescription": {
+      "description": "chang",
+      "message": "支持比特币、以太坊和BNB等全量币种交易的多链数字加密钱包"
+   },
+   "appName": {
+      "description": "The name of the application",
+      "message": "BitKeep: 可交易比特币的区块链加密钱包"
+   },
+   "demo": {
+      "description": "插件名称",
+      "message": "BitKeep $URL$",
+      "placeholders": {
+         "url": {
+            "content": "$1",
+            "example": "https://developer.mozilla.org"
+         }
+      }
+   }
+}

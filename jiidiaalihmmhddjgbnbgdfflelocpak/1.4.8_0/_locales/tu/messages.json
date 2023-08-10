@@ -1,0 +1,24 @@
+{
+  "demo" : {    
+
+"message": "BitKeep $URL$",
+    "description": "Uzantı Adı",
+    "placeholders": {
+      "url" : {
+        "content" : "$1",
+        "example" : "https://developer.mozilla.org"
+      }
+    }
+  },
+
+
+  "appDescription": {
+"message": "Bitcoin, Ethereum, BNB, Swap ve NFT Market'i destekleyen en iyi dijital kripto para cüzdanı",
+    "description": "Uygulama Tanıtımı"
+  },
+  "appName": {
+    "message": "BitKeep: Bitcoin Kripto Cüzdanı",
+    "description": "Uygulama Adı"
+  }
+}
+

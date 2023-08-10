@@ -1,0 +1,20 @@
+{
+   "appDescription": {
+      "description": "Descrição do aplicativo",
+      "message": "Melhor carteira digital Crypto que suporta Bitcoin, Ethereum, BNB, Swap e NFT Market"
+   },
+   "appName": {
+      "description": "Nome do aplicativo",
+      "message": "BitKeep: carteira de criptomoedas Bitcoin"
+   },
+   "demo": {
+      "description": "nome do plug-in",
+      "message": "BitKeep $URL$",
+      "placeholders": {
+         "url": {
+            "content": "$1",
+            "example": "https://developer.mozilla.org"
+         }
+      }
+   }
+}

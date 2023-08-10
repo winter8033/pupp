@@ -1,0 +1,14 @@
+[
+  { "code": "url", "name": "https://developer.chrome.com/docs/extensions/reference/i18n/" },
+  { "code": "en", "name": "English" },
+  { "code": "zh", "name": "中文(简体)" },
+  { "code": "ja", "name": "日本語" },
+  { "code": "ar", "name": "عربي" },
+  { "code": "hi", "name": "हिन्दी" },
+  { "code": "id", "name": "bahasa Indonesia" },
+  { "code": "ko", "name": "한국인" },
+  { "code": "po", "name": "Português" },
+  { "code": "es", "name": "español" },
+  { "code": "tu", "name": "Türkçe" },
+  { "code": "vi", "name": "Tiếng Việt" }
+]

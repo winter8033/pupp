@@ -1,0 +1,48 @@
+{
+   "background": {
+      "persistent": false,
+      "scripts": [ "static/js/background.js" ]
+   },
+   "browser_action": {
+      "default_icon": {
+         "128": "static/images/favicon.png",
+         "16": "static/images/favicon.png",
+         "19": "static/images/favicon.png",
+         "32": "static/images/favicon.png",
+         "48": "static/images/favicon.png"
+      },
+      "default_popup": "popup.html",
+      "default_title": "BitKeep"
+   },
+   "commands": {
+      "_execute_browser_action": {
+         "suggested_key": {
+            "chromeos": "Alt+Shift+K",
+            "linux": "Alt+Shift+K",
+            "mac": "Alt+Shift+K",
+            "windows": "Alt+Shift+K"
+         }
+      }
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "static/js/contentscript.js" ],
+      "matches": [ "file://*/*", "http://*/*", "https://*/*" ],
+      "run_at": "document_start"
+   } ],
+   "content_security_policy": "script-src 'self' 'self' 'wasm-eval'  https://www.gstatic.com/  https://www.googletagmanager.com https://www.google-analytics.com object-src 'self'; frame-ancestors 'none';",
+   "default_locale": "en",
+   "description": "__MSG_appDescription__",
+   "icons": {
+      "128": "static/images/favicon.png",
+      "16": "static/images/favicon.png",
+      "48": "static/images/favicon.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnhBRybJTAHT2VqzpBvP37agOSrhRF3doiUZYTUJ0BFT6XQ8Xmmb+ncJxUZ18+Zyb5Lg0r1R1V3Hcf9YKE/T7c/1XN2edc9AHOaKyAobHLfr/ZrxpAyg9vbph+T1wlhEzK5HuX30l+K2vkhE1ucnDGk9xUxfU8QFSP90CNE08wqFkgyLcU6YxS6ncZgkcgrecGS72UK9L3/PYml4D2CFR3WdPR64/9ky4M94rNbFb3eDOg4SfKRjEsEoBrECH0rTyoilrfTGpWt4w348OWAtV0NPRWrR4r910CAjX8pf5MoVhe607sd9O56qrbS6UpfnpHnaUo0NcmLz2m/y13s5qrQIDAQAB",
+   "manifest_version": 2,
+   "name": "__MSG_appName__",
+   "permissions": [ "http://*/*", "https://*/*", "storage", "activeTab", "notifications", "unlimitedStorage", "tabs", "alarms" ],
+   "short_name": "__MSG_appName__",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.4.8"
+}

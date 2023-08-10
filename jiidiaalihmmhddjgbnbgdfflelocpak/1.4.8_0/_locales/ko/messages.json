@@ -1,0 +1,20 @@
+{
+   "appDescription": {
+      "description": " 앱 설명",
+      "message": " 비트코인, 이더리움, BNB, 스왑 및 NFT 마켓을 지원하는 최고의 암호화폐 디지털 지갑"
+   },
+   "appName": {
+      "description": " 앱 이름",
+      "message": " BitKeep:  비트코인 암호화폐 지갑 "
+   },
+   "demo": {
+      "description": "확장 이름",
+      "message": "BitKeep $URL$",
+      "placeholders": {
+         "url": {
+            "content": "$1",
+            "example": "https://developer.mozilla.org"
+         }
+      }
+   }
+}

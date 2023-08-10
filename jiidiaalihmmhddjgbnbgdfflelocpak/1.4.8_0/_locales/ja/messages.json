@@ -1,0 +1,20 @@
+{
+   "appDescription": {
+      "description": "頻繁",
+      "message": "ビットコイン、イーサリアム、BNB、スワップおよびNFTマーケットをサポートした、最良の仮想通過デジタルウォレット"
+   },
+   "appName": {
+      "description": "アプリケーションの名前",
+      "message": "BitKeep：ビットコイン仮想通貨ウォレット"
+   },
+   "demo": {
+      "description": "插件名称",
+      "message": "BitKeep $URL$",
+      "placeholders": {
+         "url": {
+            "content": "$1",
+            "example": "https://developer.mozilla.org"
+         }
+      }
+   }
+}

@@ -1,0 +1,20 @@
+{
+   "appDescription": {
+      "description": "एप्लीकेशन विवरण",
+      "message": "बिटकॉइन, एथेरेयम, BNB, स्वैप और NFT मार्केट का समर्थन करने वाला सर्वश्रेष्ठ क्रिप्टो डिजिटल वॉलेट"
+   },
+   "appName": {
+      "description": "एप्लीकेशन का नाम",
+      "message": "BitKeep: बिटकॉइन क्रिप्टो वॉलेट"
+   },
+   "demo": {
+      "description": "एक्सटेंशन का नाम",
+      "message": "BitKeep $URL$",
+      "placeholders": {
+         "url": {
+            "content": "$1",
+            "example": "https://developer.mozilla.org"
+         }
+      }
+   }
+}
