@@ -54,4 +54,4 @@ EXPOSE 3000
 
 # Run app
 # CMD [ "xvfb-run", "--auto-servernum", "--server-num=1","node", "server.js"]
-CMD [ "node", "server.js"]
+CMD ["xvfb-run","--auto-servernum", "node", "server.js"]
