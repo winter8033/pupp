@@ -54,6 +54,7 @@ RUN apt-get update && apt-get install gnupg wget -y && \
     apt-get update && \
     apt-get install google-chrome-stable -y --no-install-recommends && \
     rm -rf /var/lib/apt/lists/* 
+    
 RUN apt-get update && apt-get install -y dbus
 RUN dbus-daemon --system --fork
 RUN apt-get update -y \ 
